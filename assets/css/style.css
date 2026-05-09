@@ -668,25 +668,6 @@ code { background: none; }
   top: 6px;
 }
 
-/* Education */
-.education { }
-.edu-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 28px 32px;
-  max-width: 600px;
-  transition: var(--transition);
-}
-.edu-card:hover { border-color: rgba(99,102,241,0.3); }
-.edu-card__icon { font-size: 2rem; flex-shrink: 0; }
-.edu-card h3 { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
-.edu-card__school { font-size: 0.88rem; color: var(--primary-light); font-weight: 500; margin-bottom: 6px; }
-.edu-card__detail { font-size: 0.82rem; color: var(--text-faint); }
-.edu-card .timeline__badge { margin-left: auto; }
 
 /* =============================================
    CONTACT
