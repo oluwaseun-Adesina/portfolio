@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oluwaseun Adesina — Full-Stack Developer</title>
+  <meta name="description" content="Oluwaseun Adesina — Full-Stack Developer crafting beautiful, performant web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">OA<span class="dot">.</span></a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--sm">Hire Me</a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+      <canvas id="grid-canvas"></canvas>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge reveal">
+        <span class="status-dot"></span> Available for work
+      </div>
+      <h1 class="hero__title reveal">
+        Hi, I'm <span class="gradient-text">Oluwaseun</span><br />
+        I build things for<br />
+        <span class="typed-wrapper">the <span id="typed"></span></span>
+      </h1>
+      <p class="hero__sub reveal">
+        Full-Stack Developer crafting elegant, high-performance web experiences
+        that users love and businesses rely on.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary">See My Work</a>
+        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+      </div>
+      <div class="hero__scroll reveal">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero__card-float reveal">
+      <div class="code-card">
+        <div class="code-card__header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-card__file">portfolio.ts</span>
+        </div>
+        <pre class="code-card__body"><code><span class="kw">const</span> <span class="var">developer</span> = {
+  name: <span class="str">"Oluwaseun Adesina"</span>,
+  role: <span class="str">"Full-Stack Developer"</span>,
+  skills: [<span class="str">"React"</span>, <span class="str">"Node.js"</span>,
+           <span class="str">"TypeScript"</span>, <span class="str">"Python"</span>],
+  passion: <span class="str">"Building great UX"</span>,
+  available: <span class="bool">true</span>,
+};
+
+<span class="fn">hire</span>(developer); <span class="cmt">// ← do this</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__label reveal">About Me</div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <h2 class="section__title">Developer by craft,<br /><span class="gradient-text">problem-solver</span> by nature</h2>
+          <p>I'm Oluwaseun — a passionate full-stack developer with a deep love for building products that are as beautiful as they are functional. I thrive at the intersection of clean code and great design.</p>
+          <p>From architecting scalable backend APIs to crafting pixel-perfect frontends, I bring an end-to-end perspective to every project. When I'm not coding, I'm exploring the latest in AI tooling and developer experience.</p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__num gradient-text">3+</span>
+              <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num gradient-text">20+</span>
+              <span class="stat__label">Projects Shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num gradient-text">100%</span>
+              <span class="stat__label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual reveal">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="80" r="40" fill="url(#avatarGrad)"/>
+                <ellipse cx="100" cy="170" rx="65" ry="45" fill="url(#avatarGrad)"/>
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6366f1"/>
+                    <stop offset="1" stop-color="#a855f7"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="avatar-badge avatar-badge--1">
+              <span>⚡</span> TypeScript
+            </div>
+            <div class="avatar-badge avatar-badge--2">
+              <span>🚀</span> Next.js
+            </div>
+            <div class="avatar-badge avatar-badge--3">
+              <span>🛠</span> Node.js
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__label reveal">What I Use</div>
+      <h2 class="section__title reveal">My <span class="gradient-text">Tech Stack</span></h2>
+      <p class="section__sub reveal">A curated set of tools I use daily to ship great products.</p>
+
+      <div class="skills__grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">⚛️</div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>React & Next.js</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>Framer Motion</li>
+            <li>HTML5 / CSS3</li>
+          </ul>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="--w:92%"></div>
+          </div>
+          <span class="skill-card__level">Expert</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🖥️</div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js & Express</li>
+            <li>Python & FastAPI</li>
+            <li>REST & GraphQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="--w:85%"></div>
+          </div>
+          <span class="skill-card__level">Advanced</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <ul>
+            <li>AWS / Vercel</li>
+            <li>Docker</li>
+            <li>CI/CD Pipelines</li>
+            <li>GitHub Actions</li>
+            <li>Linux</li>
+          </ul>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="--w:75%"></div>
+          </div>
+          <span class="skill-card__level">Proficient</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🤖</div>
+          <h3>AI & Tools</h3>
+          <ul>
+            <li>Claude / OpenAI APIs</li>
+            <li>LangChain</li>
+            <li>MCP Servers</li>
+            <li>Claude Code</li>
+            <li>Prompt Engineering</li>
+          </ul>
+          <div class="skill-card__bar">
+            <div class="skill-card__fill" style="--w:88%"></div>
+          </div>
+          <span class="skill-card__level">Advanced</span>
+        </div>
+
+      </div>
+
+      <div class="tech-pills reveal">
+        <span class="pill">Git</span>
+        <span class="pill">Figma</span>
+        <span class="pill">Prisma</span>
+        <span class="pill">Redis</span>
+        <span class="pill">WebSockets</span>
+        <span class="pill">Stripe</span>
+        <span class="pill">Supabase</span>
+        <span class="pill">Jest</span>
+        <span class="pill">Vitest</span>
+        <span class="pill">shadcn/ui</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__label reveal">My Work</div>
+      <h2 class="section__title reveal">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section__sub reveal">A selection of things I've built and shipped.</p>
+
+      <div class="projects__grid">
+
+        <article class="project-card project-card--featured reveal">
+          <div class="project-card__image">
+            <div class="project-placeholder project-placeholder--1">
+              <div class="placeholder-ui">
+                <div class="pui-bar"></div>
+                <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
+                <div class="pui-row"><div class="pui-block"></div><div class="pui-block wide"></div></div>
+                <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
+              </div>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <h3>SaaS Dashboard Platform</h3>
+            <p>A full-featured SaaS analytics platform with real-time data visualization, role-based access control, Stripe billing integration, and a sleek responsive dashboard.</p>
+            <div class="project-card__links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <div class="project-placeholder project-placeholder--2">
+              <div class="placeholder-ui">
+                <div class="pui-circle"></div>
+                <div class="pui-bar short"></div>
+                <div class="pui-row"><div class="pui-block"></div><div class="pui-block"></div><div class="pui-block"></div></div>
+              </div>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">OpenAI</span>
+            </div>
+            <h3>AI Writing Assistant</h3>
+            <p>A context-aware writing tool powered by GPT-4 that helps users draft, refine, and structure long-form content with smart suggestions.</p>
+            <div class="project-card__links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <div class="project-placeholder project-placeholder--3">
+              <div class="placeholder-ui">
+                <div class="pui-bar"></div>
+                <div class="pui-card-grid">
+                  <div class="pui-mini-card"></div>
+                  <div class="pui-mini-card"></div>
+                  <div class="pui-mini-card"></div>
+                  <div class="pui-mini-card"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3>E-Commerce API</h3>
+            <p>A high-performance REST API for a multi-vendor marketplace with inventory management, order tracking, webhooks, and comprehensive admin tooling.</p>
+            <div class="project-card__links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <div class="project-placeholder project-placeholder--4">
+              <div class="placeholder-ui">
+                <div class="pui-chat">
+                  <div class="pui-bubble left"></div>
+                  <div class="pui-bubble right"></div>
+                  <div class="pui-bubble left short"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__overlay">
+              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">React</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Redis</span>
+            </div>
+            <h3>Real-Time Chat App</h3>
+            <p>A scalable real-time messaging platform with presence indicators, message reactions, file sharing, and end-to-end encrypted direct messages.</p>
+            <div class="project-card__links">
+              <a href="#" class="project-link">Live Demo ↗</a>
+              <a href="#" class="project-link">Source ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects__cta reveal">
+        <p>Want to see more?</p>
+        <a href="https://github.com/oluwaseun-adesina" target="_blank" rel="noopener" class="btn btn--ghost">
+          View GitHub Profile →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__label reveal">Get In Touch</div>
+      <h2 class="section__title reveal">Let's build something<br /><span class="gradient-text">great together</span></h2>
+      <p class="section__sub reveal">
+        I'm currently open to new opportunities. Whether you have a project in mind,
+        a question, or just want to say hi — my inbox is open.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact-item">
+            <div class="contact-item__icon">📧</div>
+            <div>
+              <div class="contact-item__label">Email</div>
+              <a href="mailto:hello@oluwaseunadesina.dev" class="contact-item__value">hello@oluwaseunadesina.dev</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">🐙</div>
+            <div>
+              <div class="contact-item__label">GitHub</div>
+              <a href="https://github.com/oluwaseun-adesina" target="_blank" rel="noopener" class="contact-item__value">github.com/oluwaseun-adesina</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">💼</div>
+            <div>
+              <div class="contact-item__label">LinkedIn</div>
+              <a href="#" class="contact-item__value">linkedin.com/in/oluwaseun-adesina</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">🌍</div>
+            <div>
+              <div class="contact-item__label">Location</div>
+              <span class="contact-item__value">Nigeria · Open to Remote</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Thanks! I'll be in touch shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">OA<span class="dot">.</span></div>
+        <p class="footer__copy">
+          Designed & built by Oluwaseun Adesina · <span id="year"></span>
+        </p>
+        <div class="footer__links">
+          <a href="https://github.com/oluwaseun-adesina" target="_blank" rel="noopener">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
