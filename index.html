@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oluwaseun Adesina — Full-Stack Developer</title>
-  <meta name="description" content="Oluwaseun Adesina — Full-Stack Developer crafting beautiful, performant web experiences." />
+  <title>Oluwaseun Adesina — Backend & Data Engineer</title>
+  <meta name="description" content="Backend & Data Engineer in Lagos. I build data pipelines, backend services, and IT systems for healthcare and fintech. Currently at AfyaCare/OctoSquad. MBA candidate at Miva. Open to remote backend and data engineering roles." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -18,19 +18,21 @@
       <a href="#hero" class="nav__logo">OA<span class="dot">.</span></a>
       <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills">Stack</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#contact" class="btn btn--sm">Hire Me</a>
+      <a href="#contact" class="btn btn--sm">Get in touch</a>
       <button class="nav__burger" id="burger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
     <div class="nav__mobile" id="mobileMenu">
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#skills">Stack</a>
       <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -45,20 +47,22 @@
     </div>
     <div class="hero__content">
       <div class="hero__badge reveal">
-        <span class="status-dot"></span> Available for work
+        <span class="status-dot"></span> Lagos, Nigeria · Open to Remote
       </div>
       <h1 class="hero__title reveal">
-        Hi, I'm <span class="gradient-text">Oluwaseun</span><br />
-        I build things for<br />
-        <span class="typed-wrapper">the <span id="typed"></span></span>
+        Backend &amp; Data Engineer<br />
+        building <span class="gradient-text">reliable systems</span><br />
+        for African markets.
       </h1>
       <p class="hero__sub reveal">
-        Full-Stack Developer crafting elegant, high-performance web experiences
-        that users love and businesses rely on.
+        Currently engineering data systems and infrastructure at AfyaCare/OctoSquad,
+        supporting healthcare operations across Lagos. I write Node.js, Python, and SQL —
+        and I'm equally at home wiring up Pentaho ETL pipelines, designing Postgres DR plans,
+        or shipping React Native apps.
       </p>
       <div class="hero__cta reveal">
-        <a href="#projects" class="btn btn--primary">See My Work</a>
-        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
       </div>
       <div class="hero__scroll reveal">
         <span>Scroll</span>
@@ -71,18 +75,19 @@
           <span class="dot red"></span>
           <span class="dot yellow"></span>
           <span class="dot green"></span>
-          <span class="code-card__file">portfolio.ts</span>
+          <span class="code-card__file">engineer.ts</span>
         </div>
-        <pre class="code-card__body"><code><span class="kw">const</span> <span class="var">developer</span> = {
-  name: <span class="str">"Oluwaseun Adesina"</span>,
-  role: <span class="str">"Full-Stack Developer"</span>,
-  skills: [<span class="str">"React"</span>, <span class="str">"Node.js"</span>,
-           <span class="str">"TypeScript"</span>, <span class="str">"Python"</span>],
-  passion: <span class="str">"Building great UX"</span>,
+        <pre class="code-card__body"><code><span class="kw">const</span> <span class="var">oluwaseun</span> = {
+  role: <span class="str">"Backend & Data Engineer"</span>,
+  location: <span class="str">"Lagos, Nigeria"</span>,
+  current: <span class="str">"AfyaCare / OctoSquad"</span>,
+  stack: [<span class="str">"Node.js"</span>, <span class="str">"Python"</span>,
+          <span class="str">"PostgreSQL"</span>, <span class="str">"Pentaho"</span>],
+  pursuing: <span class="str">"MBA @ Miva Open Uni"</span>,
+  os: <span class="str">"CachyOS + Hyprland"</span>,
+  openTo: <span class="str">"Remote roles"</span>,
   available: <span class="bool">true</span>,
-};
-
-<span class="fn">hire</span>(developer); <span class="cmt">// ← do this</span></code></pre>
+};</code></pre>
       </div>
     </div>
   </section>
@@ -93,21 +98,22 @@
       <div class="section__label reveal">About Me</div>
       <div class="about__grid">
         <div class="about__text reveal">
-          <h2 class="section__title">Developer by craft,<br /><span class="gradient-text">problem-solver</span> by nature</h2>
-          <p>I'm Oluwaseun — a passionate full-stack developer with a deep love for building products that are as beautiful as they are functional. I thrive at the intersection of clean code and great design.</p>
-          <p>From architecting scalable backend APIs to crafting pixel-perfect frontends, I bring an end-to-end perspective to every project. When I'm not coding, I'm exploring the latest in AI tooling and developer experience.</p>
+          <h2 class="section__title">Where backend reliability<br />meets <span class="gradient-text">real-world constraints.</span></h2>
+          <p>I'm Oluwaseun — a Backend and Data Engineer based in Lagos, Nigeria. By day, I support a group of healthcare entities (R-Jolad Hospital, Bastion HMO, AfyaCare) where I wear multiple hats: building ETL pipelines in Pentaho, administering Microsoft 365 and Postgres on AWS RDS, and running internal tooling that keeps four affiliated organizations operating smoothly.</p>
+          <p>Outside of work, I build products. I'm shipping <strong class="highlight">FitPick</strong>, an AI-powered wardrobe styling app, and recently competed in the <strong class="highlight">Enyata × Interswitch Buildathon</strong> as a backend engineer on MediPay Wallet — an emergency health funding PWA for Nigerians.</p>
+          <p>I run <strong class="highlight">CachyOS with Hyprland</strong> because I enjoy a system that does exactly what I tell it to. I'm pursuing an <strong class="highlight">MBA at Miva Open University</strong> to round out the technical work with business fundamentals. And I'm always interested in problems where backend reliability, data, and emerging-market constraints intersect.</p>
           <div class="about__stats">
             <div class="stat">
-              <span class="stat__num gradient-text">3+</span>
-              <span class="stat__label">Years Experience</span>
+              <span class="stat__num gradient-text">4</span>
+              <span class="stat__label">Healthcare Entities Supported</span>
             </div>
             <div class="stat">
-              <span class="stat__num gradient-text">20+</span>
+              <span class="stat__num gradient-text">734</span>
+              <span class="stat__label">M365 Users Administered</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num gradient-text">7+</span>
               <span class="stat__label">Projects Shipped</span>
-            </div>
-            <div class="stat">
-              <span class="stat__num gradient-text">100%</span>
-              <span class="stat__label">Client Satisfaction</span>
             </div>
           </div>
         </div>
@@ -126,15 +132,9 @@
                 </defs>
               </svg>
             </div>
-            <div class="avatar-badge avatar-badge--1">
-              <span>⚡</span> TypeScript
-            </div>
-            <div class="avatar-badge avatar-badge--2">
-              <span>🚀</span> Next.js
-            </div>
-            <div class="avatar-badge avatar-badge--3">
-              <span>🛠</span> Node.js
-            </div>
+            <div class="avatar-badge avatar-badge--1"><span>🗄️</span> PostgreSQL</div>
+            <div class="avatar-badge avatar-badge--2"><span>⚙️</span> Pentaho ETL</div>
+            <div class="avatar-badge avatar-badge--3"><span>☁️</span> AWS RDS</div>
           </div>
         </div>
       </div>
@@ -145,88 +145,81 @@
   <section class="section skills" id="skills">
     <div class="container">
       <div class="section__label reveal">What I Use</div>
-      <h2 class="section__title reveal">My <span class="gradient-text">Tech Stack</span></h2>
-      <p class="section__sub reveal">A curated set of tools I use daily to ship great products.</p>
+      <h2 class="section__title reveal">The <span class="gradient-text">Stack</span></h2>
+      <p class="section__sub reveal">Tools and technologies I reach for when building reliable systems.</p>
 
       <div class="skills__grid">
 
         <div class="skill-card reveal">
-          <div class="skill-card__icon">⚛️</div>
-          <h3>Frontend</h3>
+          <div class="skill-card__icon">🖥️</div>
+          <h3>Backend &amp; Languages</h3>
           <ul>
-            <li>React & Next.js</li>
-            <li>TypeScript</li>
-            <li>Tailwind CSS</li>
-            <li>Framer Motion</li>
-            <li>HTML5 / CSS3</li>
+            <li>Node.js, Express, Mongoose</li>
+            <li>Python</li>
+            <li>Java (Android native)</li>
+            <li>SQL — PostgreSQL, MariaDB</li>
+            <li>MongoDB</li>
           </ul>
-          <div class="skill-card__bar">
-            <div class="skill-card__fill" style="--w:92%"></div>
-          </div>
-          <span class="skill-card__level">Expert</span>
         </div>
 
         <div class="skill-card reveal">
-          <div class="skill-card__icon">🖥️</div>
-          <h3>Backend</h3>
+          <div class="skill-card__icon">🔄</div>
+          <h3>Data Engineering</h3>
           <ul>
-            <li>Node.js & Express</li>
-            <li>Python & FastAPI</li>
-            <li>REST & GraphQL</li>
-            <li>PostgreSQL</li>
-            <li>MongoDB</li>
+            <li>Pentaho PDI / Kettle</li>
+            <li>ETL design &amp; monitoring</li>
+            <li>Power BI</li>
+            <li>AWS RDS, S3, EC2</li>
+            <li>Oracle Cloud Object Storage</li>
           </ul>
-          <div class="skill-card__bar">
-            <div class="skill-card__fill" style="--w:85%"></div>
-          </div>
-          <span class="skill-card__level">Advanced</span>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">📱</div>
+          <h3>Mobile &amp; Frontend</h3>
+          <ul>
+            <li>React Native (Expo)</li>
+            <li>Firebase</li>
+            <li>Google OAuth</li>
+            <li>Java (Android native)</li>
+          </ul>
         </div>
 
         <div class="skill-card reveal">
           <div class="skill-card__icon">☁️</div>
-          <h3>Cloud & DevOps</h3>
+          <h3>Infrastructure &amp; DevOps</h3>
           <ul>
-            <li>AWS / Vercel</li>
+            <li>Linux — Arch / CachyOS, Ubuntu</li>
             <li>Docker</li>
-            <li>CI/CD Pipelines</li>
-            <li>GitHub Actions</li>
-            <li>Linux</li>
+            <li>AWS RDS Multi-AZ, PITR</li>
+            <li>Railway, ngrok</li>
+            <li>Sophos firewall, VoIP/SIP</li>
           </ul>
-          <div class="skill-card__bar">
-            <div class="skill-card__fill" style="--w:75%"></div>
-          </div>
-          <span class="skill-card__level">Proficient</span>
         </div>
 
         <div class="skill-card reveal">
-          <div class="skill-card__icon">🤖</div>
-          <h3>AI & Tools</h3>
+          <div class="skill-card__icon">🔌</div>
+          <h3>Integrations &amp; APIs</h3>
           <ul>
-            <li>Claude / OpenAI APIs</li>
-            <li>LangChain</li>
-            <li>MCP Servers</li>
-            <li>Claude Code</li>
-            <li>Prompt Engineering</li>
+            <li>Paystack</li>
+            <li>Interswitch (Quickteller Business)</li>
+            <li>Google Gemini API</li>
+            <li>Tesseract.js (OCR)</li>
+            <li>Microsoft 365 &amp; Zoho admin</li>
           </ul>
-          <div class="skill-card__bar">
-            <div class="skill-card__fill" style="--w:88%"></div>
-          </div>
-          <span class="skill-card__level">Advanced</span>
         </div>
 
-      </div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🛠️</div>
+          <h3>Tools &amp; Environment</h3>
+          <ul>
+            <li>Git</li>
+            <li>VS Code, Neovim</li>
+            <li>Hyprland / KDE Plasma</li>
+            <li>CachyOS (daily driver)</li>
+          </ul>
+        </div>
 
-      <div class="tech-pills reveal">
-        <span class="pill">Git</span>
-        <span class="pill">Figma</span>
-        <span class="pill">Prisma</span>
-        <span class="pill">Redis</span>
-        <span class="pill">WebSockets</span>
-        <span class="pill">Stripe</span>
-        <span class="pill">Supabase</span>
-        <span class="pill">Jest</span>
-        <span class="pill">Vitest</span>
-        <span class="pill">shadcn/ui</span>
       </div>
     </div>
   </section>
@@ -236,40 +229,42 @@
     <div class="container">
       <div class="section__label reveal">My Work</div>
       <h2 class="section__title reveal">Featured <span class="gradient-text">Projects</span></h2>
-      <p class="section__sub reveal">A selection of things I've built and shipped.</p>
+      <p class="section__sub reveal">Real problems, real constraints — from Lagos healthcare to buildathon deadlines.</p>
+
+      <!-- Featured: MediPay -->
+      <article class="project-card project-card--featured reveal">
+        <div class="project-card__image">
+          <div class="project-placeholder project-placeholder--1">
+            <div class="placeholder-ui">
+              <div class="pui-bar"></div>
+              <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
+              <div class="pui-row"><div class="pui-block"></div><div class="pui-block wide"></div></div>
+              <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta">
+            <span class="meta-badge meta-badge--buildathon">🏆 Enyata × Interswitch Buildathon 2026</span>
+            <span class="meta-badge">Backend Engineer · 4-person team</span>
+          </div>
+          <div class="project-card__tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Paystack</span>
+            <span class="tag">Interswitch</span>
+            <span class="tag">Gemini API</span>
+            <span class="tag">Tesseract.js</span>
+            <span class="tag">Railway</span>
+          </div>
+          <h3>MediPay Wallet</h3>
+          <p class="project-card__tagline">Nigerian emergency health funding PWA</p>
+          <p>Nigerians often face medical emergencies without immediate access to funds. MediPay lets users save toward health goals and receive emergency disbursements with verifiable medical bills.</p>
+          <p>I designed and implemented the backend API, integrated Paystack and Interswitch for payments, and built the OCR pipeline for verifying medical receipts using Gemini with Tesseract.js as a fallback. Deployed on Railway within the buildathon timeline.</p>
+        </div>
+      </article>
 
       <div class="projects__grid">
-
-        <article class="project-card project-card--featured reveal">
-          <div class="project-card__image">
-            <div class="project-placeholder project-placeholder--1">
-              <div class="placeholder-ui">
-                <div class="pui-bar"></div>
-                <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
-                <div class="pui-row"><div class="pui-block"></div><div class="pui-block wide"></div></div>
-                <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
-              </div>
-            </div>
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
-            </div>
-          </div>
-          <div class="project-card__body">
-            <div class="project-card__tags">
-              <span class="tag">Next.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Prisma</span>
-              <span class="tag">PostgreSQL</span>
-            </div>
-            <h3>SaaS Dashboard Platform</h3>
-            <p>A full-featured SaaS analytics platform with real-time data visualization, role-based access control, Stripe billing integration, and a sleek responsive dashboard.</p>
-            <div class="project-card__links">
-              <a href="#" class="project-link">Live Demo ↗</a>
-              <a href="#" class="project-link">Source ↗</a>
-            </div>
-          </div>
-        </article>
 
         <article class="project-card reveal">
           <div class="project-card__image">
@@ -277,26 +272,23 @@
               <div class="placeholder-ui">
                 <div class="pui-circle"></div>
                 <div class="pui-bar short"></div>
-                <div class="pui-row"><div class="pui-block"></div><div class="pui-block"></div><div class="pui-block"></div></div>
+                <div class="pui-row"><div class="pui-block"></div><div class="pui-block"></div></div>
               </div>
-            </div>
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
             </div>
           </div>
           <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="meta-badge">Solo developer · In development</span>
+            </div>
             <div class="project-card__tags">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">OpenAI</span>
+              <span class="tag">Expo</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Gemini API</span>
+              <span class="tag">Firebase</span>
             </div>
-            <h3>AI Writing Assistant</h3>
-            <p>A context-aware writing tool powered by GPT-4 that helps users draft, refine, and structure long-form content with smart suggestions.</p>
-            <div class="project-card__links">
-              <a href="#" class="project-link">Live Demo ↗</a>
-              <a href="#" class="project-link">Source ↗</a>
-            </div>
+            <h3>FitPick</h3>
+            <p class="project-card__tagline">AI-powered wardrobe styling app</p>
+            <p>Photograph your wardrobe and get AI-generated outfit suggestions based on weather, occasion, and style preferences. Built for people who want to use what they own — not shop more.</p>
           </div>
         </article>
 
@@ -313,29 +305,77 @@
                 </div>
               </div>
             </div>
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
-            </div>
           </div>
           <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="meta-badge">Data Engineer · AfyaCare/OctoSquad</span>
+            </div>
             <div class="project-card__tags">
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">MongoDB</span>
+              <span class="tag">Pentaho PDI</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">AWS EC2</span>
             </div>
-            <h3>E-Commerce API</h3>
-            <p>A high-performance REST API for a multi-vendor marketplace with inventory management, order tracking, webhooks, and comprehensive admin tooling.</p>
-            <div class="project-card__links">
-              <a href="#" class="project-link">Live Demo ↗</a>
-              <a href="#" class="project-link">Source ↗</a>
-            </div>
+            <h3>Centralized ETL Monitoring</h3>
+            <p class="project-card__tagline">Data pipeline observability across four healthcare entities</p>
+            <p>Built a single ETL_Monitor.ktr using a UNION ALL COUNT(*) pattern feeding an etl_job_log table. Power BI dashboard via on-premises gateway now surfaces job health across all pipelines from one view.</p>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-card__image">
             <div class="project-placeholder project-placeholder--4">
+              <div class="placeholder-ui">
+                <div class="pui-bar"></div>
+                <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
+                <div class="pui-row"><div class="pui-block"></div><div class="pui-block wide"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="meta-badge">Solo build · AfyaCare/OctoSquad</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Advanced Formulas</span>
+              <span class="tag">Dashboards</span>
+            </div>
+            <h3>IT Issue Tracker</h3>
+            <p class="project-card__tagline">Internal ticketing and analytics — 41 issue categories</p>
+            <p>Complete tracker covering EMR, Microsoft 365, network, hardware, and general IT issues across multiple Lagos branches. KPI tiles, charts, and a leadership dashboard — adopted internally.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <div class="project-placeholder project-placeholder--5">
+              <div class="placeholder-ui">
+                <div class="pui-bar short"></div>
+                <div class="pui-row"><div class="pui-block"></div><div class="pui-block"></div><div class="pui-block"></div></div>
+                <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="meta-badge">Data / Infra Engineer · AfyaCare/OctoSquad</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">AWS RDS</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">S3</span>
+              <span class="tag">Multi-AZ</span>
+            </div>
+            <h3>PostgreSQL DR Plan</h3>
+            <p class="project-card__tagline">Production disaster recovery strategy on AWS RDS</p>
+            <p>Multi-layered DR: Multi-AZ HA, point-in-time recovery, cross-region read replicas for geographic redundancy, and S3 snapshot exports for long-term retention. Runbook now part of the ops playbook.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <div class="project-placeholder project-placeholder--6">
               <div class="placeholder-ui">
                 <div class="pui-chat">
                   <div class="pui-bubble left"></div>
@@ -344,33 +384,114 @@
                 </div>
               </div>
             </div>
-            <div class="project-card__overlay">
-              <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
-              <a href="#" class="btn btn--sm btn--ghost">GitHub →</a>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="meta-badge">Product / Tech lead · Documentation phase</span>
+            </div>
+            <div class="project-card__tags">
+              <span class="tag">PRD</span>
+              <span class="tag">Architecture</span>
+              <span class="tag">Go-to-Market</span>
+            </div>
+            <h3>Invitro</h3>
+            <p class="project-card__tagline">Event guest check-in app — Nigeria-first</p>
+            <p>WhatsApp-first invitations, QR-code check-in, offline resilience for poor-connectivity venues, and Naira pricing. Full PRD, Technical Architecture, Roadmap, UI/UX Specs, and GTM plan complete. Build phase next.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-card__image">
+            <div class="project-placeholder project-placeholder--7">
+              <div class="placeholder-ui">
+                <div class="pui-bar"></div>
+                <div class="pui-row"><div class="pui-block"></div><div class="pui-block wide"></div></div>
+                <div class="pui-row"><div class="pui-block wide"></div><div class="pui-block"></div></div>
+              </div>
             </div>
           </div>
           <div class="project-card__body">
+            <div class="project-card__meta">
+              <span class="meta-badge">Data Engineer · AfyaCare/OctoSquad</span>
+            </div>
             <div class="project-card__tags">
-              <span class="tag">React</span>
-              <span class="tag">WebSockets</span>
-              <span class="tag">Redis</span>
+              <span class="tag">Pentaho</span>
+              <span class="tag">MariaDB</span>
+              <span class="tag">Oracle Cloud</span>
+              <span class="tag">OCI</span>
             </div>
-            <h3>Real-Time Chat App</h3>
-            <p>A scalable real-time messaging platform with presence indicators, message reactions, file sharing, and end-to-end encrypted direct messages.</p>
-            <div class="project-card__links">
-              <a href="#" class="project-link">Live Demo ↗</a>
-              <a href="#" class="project-link">Source ↗</a>
-            </div>
+            <h3>MariaDB → OCI Pipeline</h3>
+            <p class="project-card__tagline">Cloud migration ETL to Oracle Cloud Object Storage</p>
+            <p>Pentaho pipeline migrating MariaDB tables to OCI Object Store using PAR URLs with gzip compression and HTTP PUT uploads.</p>
           </div>
         </article>
 
       </div>
+    </div>
+  </section>
 
-      <div class="projects__cta reveal">
-        <p>Want to see more?</p>
-        <a href="https://github.com/oluwaseun-adesina" target="_blank" rel="noopener" class="btn btn--ghost">
-          View GitHub Profile →
-        </a>
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__label reveal">Where I've Worked</div>
+      <h2 class="section__title reveal"><span class="gradient-text">Experience</span></h2>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Backend &amp; Data Engineer / IT Managed Services</h3>
+                <div class="timeline__company">AfyaCare Nigeria Limited (OctoSquad)</div>
+              </div>
+              <span class="timeline__badge">Current</span>
+            </div>
+            <p class="timeline__context">Supporting four affiliated healthcare entities — R-Jolad Hospital, Bastion HMO, AfyaCare/Octosoft — across multiple Lagos branches.</p>
+            <ul class="timeline__bullets">
+              <li>Built centralized ETL monitoring across all affiliated entities using Pentaho PDI and Power BI</li>
+              <li>Designed PostgreSQL disaster recovery strategy on AWS RDS (Multi-AZ, PITR, cross-region replicas)</li>
+              <li>Administered Microsoft 365 across 734 users and 10 domains; produced license optimization analysis</li>
+              <li>Built internal IT issue tracker covering 41 categories across EMR, network, and hardware</li>
+              <li>Configured Sophos firewall and VoIP/SIP infrastructure</li>
+              <li>Drafted technical communications, procurement analysis, and internal data privacy training materials</li>
+              <li>Designed MariaDB → Oracle Cloud Object Storage migration pipeline</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Backend Engineer</h3>
+                <div class="timeline__company">Enyata × Interswitch Buildathon 2026</div>
+              </div>
+              <span class="timeline__badge timeline__badge--event">Buildathon</span>
+            </div>
+            <p class="timeline__context">4-person team. Built MediPay Wallet — emergency health funding PWA for Nigerians.</p>
+            <ul class="timeline__bullets">
+              <li>Designed and implemented the backend API architecture</li>
+              <li>Integrated Paystack and Interswitch Quickteller Business for payments</li>
+              <li>Built OCR pipeline for medical receipt verification (Gemini + Tesseract.js fallback)</li>
+              <li>Deployed on Railway within buildathon timeline</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="education reveal">
+        <div class="section__label" style="margin-top:0">Education</div>
+        <div class="edu-card">
+          <div class="edu-card__icon">🎓</div>
+          <div>
+            <h3>MBA Candidate</h3>
+            <div class="edu-card__school">Miva Open University</div>
+            <p class="edu-card__detail">Coursework: Quantitative Analysis, HRM, Business Simulation</p>
+          </div>
+          <span class="timeline__badge">In Progress</span>
+        </div>
       </div>
     </div>
   </section>
@@ -379,10 +500,11 @@
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section__label reveal">Get In Touch</div>
-      <h2 class="section__title reveal">Let's build something<br /><span class="gradient-text">great together</span></h2>
+      <h2 class="section__title reveal">Open to remote backend<br />and <span class="gradient-text">data engineering roles</span></h2>
       <p class="section__sub reveal">
-        I'm currently open to new opportunities. Whether you have a project in mind,
-        a question, or just want to say hi — my inbox is open.
+        I'm open to remote backend and data engineering roles, and happy to hear about
+        interesting projects, collaborations, or just to talk shop about Linux,
+        ETL pipelines, or the African tech scene.
       </p>
 
       <div class="contact__grid">
@@ -412,7 +534,19 @@
             <div class="contact-item__icon">🌍</div>
             <div>
               <div class="contact-item__label">Location</div>
-              <span class="contact-item__value">Nigeria · Open to Remote</span>
+              <span class="contact-item__value">Lagos, Nigeria · Open to Remote</span>
+            </div>
+          </div>
+
+          <div class="contact__interests">
+            <div class="section__label" style="margin-top:32px; margin-bottom:12px">Interested in</div>
+            <div class="interest-pills">
+              <span class="pill">Backend engineering</span>
+              <span class="pill">Data engineering</span>
+              <span class="pill">ETL / pipelines</span>
+              <span class="pill">Emerging-market tech</span>
+              <span class="pill">African fintech</span>
+              <span class="pill">Healthcare IT</span>
             </div>
           </div>
         </div>
@@ -427,8 +561,12 @@
             <input type="email" id="email" placeholder="jane@example.com" required />
           </div>
           <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Remote role, project, collab..." />
+          </div>
+          <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <textarea id="message" rows="5" placeholder="Tell me what you're working on..." required></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--full">
             <span class="btn-text">Send Message</span>
@@ -448,12 +586,12 @@
       <div class="footer__inner">
         <div class="footer__logo">OA<span class="dot">.</span></div>
         <p class="footer__copy">
-          Designed & built by Oluwaseun Adesina · <span id="year"></span>
+          Backend &amp; Data Engineer in Lagos · MBA candidate at Miva · <span id="year"></span>
         </p>
         <div class="footer__links">
           <a href="https://github.com/oluwaseun-adesina" target="_blank" rel="noopener">GitHub</a>
           <a href="#">LinkedIn</a>
-          <a href="#">Twitter</a>
+          <a href="mailto:hello@oluwaseunadesina.dev">Email</a>
         </div>
       </div>
     </div>
